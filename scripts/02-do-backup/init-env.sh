@@ -1,0 +1,4 @@
+export PGDATA=$HOME/lxy26
+export TABLESPACE_1=$HOME/vja47
+export TABLESPACE_2=$HOME/vso93
+export TABLESPACE_3=$HOME/znb64
