@@ -1,7 +1,3 @@
-echo "quickfix postgres3 s367839" >> $PGDATA/pg_ident.conf
-
-# tail -n 2 $PGDATA/pg_ident.conf
-
 cat > $PGDATA/pg_hba.conf << EOF
 
 # TYPE  DATABASE        USER            ADDRESS                 METHOD
