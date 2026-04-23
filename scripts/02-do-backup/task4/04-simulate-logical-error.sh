@@ -7,7 +7,7 @@ EOF
 
 echo "[2/3] Логическое повреждение"
 psql -p "$PORT" -d "$DB" << EOF
-INSERT INTO table1 (name) VALUES ("МУСОР_1"), ("МУСОР_2");
+INSERT INTO table1 (name) VALUES ('МУСОР_1'), ('МУСОР_2');
 EOF
 
 echo "[3/3] Показываем данные после ошибки"
