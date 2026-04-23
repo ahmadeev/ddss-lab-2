@@ -1,1 +1,0 @@
-export PGUSERNAME=postgres3
