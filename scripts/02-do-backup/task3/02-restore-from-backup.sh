@@ -22,7 +22,7 @@ echo
 echo "[4/6] Корректировка конфигурации под новый PGDATA"
 for f in "$NEW_PGDATA/postgresql.conf" "$NEW_PGDATA/postgresql.auto.conf"; do
   [ -f "$f" ] || continue
-  sed -i "s|$OLD_PGDATA|$NEW_PGDATA|g" "$f"
+  sed -i '' "s|$OLD_PGDATA|$NEW_PGDATA|g" "$f"
 done
 
 echo

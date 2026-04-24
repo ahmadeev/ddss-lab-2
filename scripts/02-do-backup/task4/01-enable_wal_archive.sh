@@ -2,6 +2,7 @@ echo "[1/5] Создаём каталог архива WAL"
 mkdir -p "$ARCHIVE_DIR"
 
 echo "[2/5] Включаем архивирование в postgresql.auto.conf"
+pg_ctl -D "$PGDATA" start
 psql -p "$PORT" -d postgres << EOF
 ALTER SYSTEM SET wal_level = 'replica';
 ALTER SYSTEM SET archive_mode = 'on';
